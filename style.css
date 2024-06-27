@@ -1,0 +1,60 @@
+/* acessa todos os elementos
+remove todas a margens
+remove todos os paddings
+calcula automaticamente as larguras considerando: conteudo, bordas, margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* acessa o elemento root e cria variaveis globais */
+:root {
+    --primaria: #915f32;
+    --secundaria: #ce9056;
+    --terciaria: #e1e6eb;
+    --branco: white;
+    --preto: black;
+}
+/* seleciona o header
+coloca a cor de fundo e um espaçamento interno */
+
+header {
+    background-color: var(--primaria);
+    padding: 1rem;
+
+}
+/* seleciona o nav
+coloca cor de fundo
+muda o display para o grid
+cria uma grade de 5 colunas de larguras igual
+alinha o texto no centro da coluna
+espaçamento interno
+espaço entre as colunas e linhas do grid  */
+nav {
+    background-color: var(--secundaria);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    padding: 0.25;
+    gap: 0.5rem;
+
+}
+/* seleciona todos os link dentro de navs
+remove a decoração dos links
+muda a cor da letra
+e a exibição do ponteiro do mouse para a mão */
+nav a {
+    text-decoration: none;
+    color: var(--preto);
+    cursor: pointer;
+}
+/*  qualquer item com essa class
+muda o display para flex
+coloca o espaço da horizontal mo meio dos elementos 
+ainha o intens na vertical com base no seu centro*/
+.logo-busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
