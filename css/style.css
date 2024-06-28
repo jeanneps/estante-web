@@ -76,6 +76,7 @@ main {
     flex-grow: 1;
     background-color: var(--terciaria);
 }
+
 #index {
     background-image: url("../imgs/estanteweb.jpg");
     background-repeat: no-repeat;
@@ -95,7 +96,8 @@ footer {
 #copy {
     text-align: start;
 }
-#alinhar{
+
+#alinhar {
     display: flex;
     align-items: center;
 }
@@ -104,11 +106,35 @@ footer {
     display: flex;
     justify-content: end;
 }
+
 .img-fim img {
     margin: 0 1rem;
 }
-.login {
+
+.quem_somos{
     display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    text-align: center;
+
 }
+.quem-somos{
+    display: flex;
+    display: grid;
+    box-sizing: border-box;
+    background-color: var(--primaria);
+    padding: 0,4rem;
+    text-align: center;
+    
+
+    
+    
+
+}
+    
+    
+    
+    
+
+
+
