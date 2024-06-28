@@ -7,6 +7,7 @@ calcula automaticamente as larguras considerando: conteudo, bordas, margens e pa
     padding: 0;
     box-sizing: border-box;
 }
+
 /* acessa o elemento root e cria variaveis globais */
 :root {
     --primaria: #915f32;
@@ -15,14 +16,17 @@ calcula automaticamente as larguras considerando: conteudo, bordas, margens e pa
     --branco: white;
     --preto: black;
 }
-/* seleciona o header
+
+/* seleciona o header e o footer
 coloca a cor de fundo e um espaçamento interno */
 
-header {
+header,
+footer {
     background-color: var(--primaria);
     padding: 1rem;
 
 }
+
 /* seleciona o nav
 coloca cor de fundo
 muda o display para o grid
@@ -37,8 +41,10 @@ nav {
     text-align: center;
     padding: 0.25;
     gap: 0.5rem;
+    align-items: center;
 
 }
+
 /* seleciona todos os link dentro de navs
 remove a decoração dos links
 muda a cor da letra
@@ -48,6 +54,7 @@ nav a {
     color: var(--preto);
     cursor: pointer;
 }
+
 /*  qualquer item com essa class
 muda o display para flex
 coloca o espaço da horizontal mo meio dos elementos 
@@ -58,3 +65,45 @@ ainha o intens na vertical com base no seu centro*/
     align-items: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main {
+    flex-grow: 1;
+    background-color: var(--terciaria);
+}
+#index {
+    background-image: url("../imgs/estanteweb.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--terciaria);
+    text-align: center;
+
+}
+
+#copy {
+    text-align: start;
+}
+#alinhar{
+    display: flex;
+    align-items: center;
+}
+
+.img-fim {
+    display: flex;
+    justify-content: end;
+}
+.img-fim img {
+    margin: 0 1rem;
+}
