@@ -111,30 +111,59 @@ footer {
     margin: 0 1rem;
 }
 
-.quem_somos{
+.quem_somos {
     display: flex;
-    display: grid;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
+    padding: 150px;
 
 }
-.quem-somos{
+
+.box_quemsomos {
+    background-color: var(--primaria); width: 200px;
+    
+}
+
+.contato{
     display: flex;
-    display: grid;
-    box-sizing: border-box;
-    background-color: var(--primaria);
-    padding: 0,4rem;
-    text-align: center;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 
     
-    
+}
+.box_usuario {
+    background-color: var(--primaria); width: 300px; height: 400px;
+    text-align: center;
+    border-radius: 50px;
 
 }
+.usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.favoritos{
+  
     
     
+}
+.box_favoritos {
     
     
-
-
+}
+.container {
+    width: 300px; height: 400px; /* largura do container */
+    margin: 20px; /* margem externa para espaçamento */
+    padding: 10px; /* preenchimento interno */
+    border: 1px solid #ccc; /* borda para destacar o container */
+    float: left; /* alinhamento lado a lado */
+    box-sizing: border-box; /* incluir borda e preenchimento na largura */
+    background-color: var(--secundaria);
+  }
+  
 
