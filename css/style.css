@@ -142,28 +142,46 @@ footer {
     border-radius: 50px;
 
 }
+
+/* class usuario main 
+alinha os itens ao centro
+centraliza todo o item */
 .usuario{
     display: flex;
-    justify-content: center;
+    justify-content: center;   
     align-items: center;
 }
 .favoritos{
-  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+
+    
     
     
 }
-.box_favoritos {
     
-    
-}
 .container {
-    width: 300px; height: 400px; /* largura do container */
-    margin: 20px; /* margem externa para espaçamento */
+    width: 300px; height: 700px; /* largura do container */
+    margin: 10px;
     padding: 10px; /* preenchimento interno */
-    border: 1px solid #ccc; /* borda para destacar o container */
-    float: left; /* alinhamento lado a lado */
+    background-color: var(--secundaria);
+    border-radius: 50px;
+
+    
+  }
+  .container3 {
+    width: 1600px; height: 700px; /* largura do container */
+    margin: 20px; /* margem externa para espaçamento */
     box-sizing: border-box; /* incluir borda e preenchimento na largura */
     background-color: var(--secundaria);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
   }
-  
 
