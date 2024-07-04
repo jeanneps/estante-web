@@ -111,6 +111,14 @@ footer {
     margin: 0 1rem;
 }
 
+/* 
+main de quem somos 
+organiza em cima a baixo
+centraliza o texto
+centraliza todo o quadrado
+alinha no centro
+da espaco entre eles
+ */
 .quem_somos {
     display: flex;
     flex-direction: column;
@@ -122,66 +130,178 @@ footer {
 
 }
 
+/* cor de fundo
+tamanho da caixa */
 .box_quemsomos {
-    background-color: var(--primaria); width: 200px;
-    
+    background-color: var(--primaria);
+    width: 200px;
+
 }
 
-.contato{
+/* organiza em coluna
+centraliza o texto
+centraliza os itens
+tamango da fonte */
+.contato {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 
-    
-}
-.box_usuario {
-    background-color: var(--primaria); width: 300px; height: 400px;
-    text-align: center;
-    border-radius: 50px;
 
 }
+
+/* cor de fundo 
+tamanho e largura da caixa width e height
+alinha o texto no centro
+arredonda a borda da caixa
+organiza em coluna
+centraliza os itens na vertical
+centraliza os itens na horizontal*/
+.box_usuario {
+    background-color: var(--secundaria);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* input para digitar email
+tamanho da caixa
+preenchimento de dentro da caixa
+tamanho da fonte(letras)
+borda em volta da caixa
+arredonda a borda da caixa  */
+
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 1px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 3px;
+
+}
+
+/* input para digitar senha
+tamanho da caixa
+preenchimento de dentro da caixa
+tamanho da fonte(letras)
+borda em volta da caixa
+arredonda a borda da caixa  */
+
+
+input[type="senha"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 3px;
+
+}
+
+/* label texto acima da caixa se senha e login
+distancia da caixa */
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
 
 /* class usuario main 
 alinha os itens ao centro
 centraliza todo o item */
-.usuario{
-    display: flex;
-    justify-content: center;   
-    align-items: center;
-}
-.favoritos{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: flex-end;
 
-    
-    
-    
-}
-    
-.container {
-    width: 300px; height: 700px; /* largura do container */
-    margin: 10px;
-    padding: 10px; /* preenchimento interno */
-    background-color: var(--secundaria);
-    border-radius: 50px;
-
-    
-  }
-  .container3 {
-    width: 1600px; height: 700px; /* largura do container */
-    margin: 20px; /* margem externa para espaçamento */
-    box-sizing: border-box; /* incluir borda e preenchimento na largura */
-    background-color: var(--secundaria);
-    border-radius: 50px;
+.usuario {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-  }
+    margin: 0;
 
+
+}
+
+/* botao de entrar
+tamanho e largura
+cor de fundo 
+cor preta
+borda do botao
+curso para ficar uma mão no lugar da seta */
+button {
+    width: 20%;
+    padding: 10px;
+    background-color: var(--primaria) color: #000;
+    border: none;
+    cursor: pointer;
+
+}
+
+button:houver {
+    background-color: var(--primaria);
+
+}
+
+button:focus {
+    outline: none;
+
+}
+
+
+.favoritos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container {
+    width: 250px;
+    height: 700px;
+    /* largura do container */
+    margin: 10px;
+    padding: 10px;
+    /* preenchimento interno */
+    background-color: var(--secundaria);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.conteiner2 {
+    border: 2px solid #000;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container3 {
+    width: 1500px;
+    height: 700px;
+    /* largura do container */
+    margin: 10px;
+    /* margem externa para espaçamento */
+    box-sizing: border-box;
+    /* incluir borda e preenchimento na largura */
+    background-color: var(--secundaria);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
